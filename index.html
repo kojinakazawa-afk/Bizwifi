@@ -34,6 +34,9 @@ h1{font-size:22px;font-weight:500;margin:0 0 4px}
 .cap{background:#f3f1ea;border-radius:12px;padding:1rem 1.25rem}
 .cap-t{font-size:16px;font-weight:500;margin:0 0 6px}
 .cap-d{font-size:13.5px;color:#6b6a64;margin:0}
+.cap-ul{margin:0;padding-left:1.1em}
+.cap-ul li{margin:0 0 5px}
+.cap-ul li:last-child{margin-bottom:0}
 .lbl{font-size:13px;color:#444441;margin:0 0 8px;font-weight:500}
 #data{display:grid;grid-template-columns:1fr;gap:12px}
 .rec{background:#fff;border:0.5px solid #e7e5dd;border-radius:12px;padding:0.75rem 1rem}
@@ -66,40 +69,40 @@ h1{font-size:22px;font-weight:500;margin:0 0 4px}
 </defs>
 
 <!-- arrows -->
-<line id="ar-agency-apply" class="step-el arr" x1="197" y1="69" x2="296" y2="69" marker-end="url(#arrow)"/>
-<line id="ar-apply-customer" class="step-el arr" x1="340" y1="102" x2="160" y2="150" marker-end="url(#arrow)"/>
-<line id="ar-apply-install" class="step-el arr" x1="320" y1="102" x2="152" y2="238" marker-end="url(#arrow)"/>
-<path  id="ar-apply-contract" class="step-el arr-reg" d="M540 95 L663 244" stroke-dasharray="6 4" marker-end="url(#arrow-reg)"/>
-<line id="ar-apply-gas" class="step-el arr-ext" x1="345" y1="104" x2="120" y2="430" marker-end="url(#arrow-ext)"/>
-<line id="ar-gas-mail" class="step-el arr-ext" x1="197" y1="452" x2="298" y2="450" marker-end="url(#arrow-ext)"/>
-<line id="ar-mail-payweb" class="step-el arr" x1="400" y1="482" x2="400" y2="558" marker-end="url(#arrow)"/>
-<line id="ar-payweb-payment" class="step-el arr-reg" x1="502" y1="586" x2="578" y2="582" marker-end="url(#arrow-reg)"/>
-<line id="ar-bank-payment" class="step-el arr" x1="808" y1="580" x2="802" y2="580" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<line id="ar-partner-apply" class="step-el arr" x1="808" y1="64" x2="544" y2="72" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<line id="ar-tantou-apply" class="step-el arr" x1="808" y1="130" x2="544" y2="86" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<path  id="ar-partner-contract" class="step-el arr" d="M845 92 L774 244" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<line id="ar-tantou-contract" class="step-el arr" x1="822" y1="156" x2="784" y2="246" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<line id="ar-plan-contract" class="step-el arr" x1="808" y1="212" x2="802" y2="256" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<line id="ar-contract-stock" class="step-el arr-reg" x1="802" y1="278" x2="808" y2="276" marker-end="url(#arrow-reg)"/>
-<line id="ar-request-contract" class="step-el arr-reg" x1="547" y1="352" x2="662" y2="316" marker-end="url(#arrow-reg)"/>
-<line id="ar-payment-contract" class="step-el arr-reg" x1="690" y1="546" x2="690" y2="318" stroke-dasharray="6 4" marker-end="url(#arrow-reg)"/>
+<line id="ar-agency-apply" class="step-el arr" x1="217" y1="69" x2="278" y2="71" marker-end="url(#arrow)"/>
+<line id="ar-apply-customer" class="step-el arr" x1="312" y1="104" x2="150" y2="148" marker-end="url(#arrow)"/>
+<line id="ar-apply-install" class="step-el arr" x1="300" y1="104" x2="152" y2="226" marker-end="url(#arrow)"/>
+<path  id="ar-apply-contract" class="step-el arr-reg" d="M500 98 L665 248" stroke-dasharray="6 4" marker-end="url(#arrow-reg)"/>
+<line id="ar-apply-gas" class="step-el arr-ext" x1="300" y1="104" x2="125" y2="450" marker-end="url(#arrow-ext)"/>
+<line id="ar-gas-mail" class="step-el arr-ext" x1="217" y1="472" x2="288" y2="467" marker-end="url(#arrow-ext)"/>
+<line id="ar-mail-payweb" class="step-el arr" x1="400" y1="496" x2="400" y2="546" marker-end="url(#arrow)"/>
+<line id="ar-payweb-payment" class="step-el arr-reg" x1="512" y1="575" x2="558" y2="579" marker-end="url(#arrow-reg)"/>
+<line id="ar-bank-payment" class="step-el arr" x1="813" y1="580" x2="782" y2="580" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<line id="ar-partner-apply" class="step-el arr" x1="813" y1="68" x2="522" y2="70" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<line id="ar-tantou-apply" class="step-el arr" x1="813" y1="132" x2="522" y2="90" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<path  id="ar-partner-contract" class="step-el arr" d="M858 92 L775 248" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<line id="ar-tantou-contract" class="step-el arr" x1="835" y1="158" x2="788" y2="250" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<line id="ar-plan-contract" class="step-el arr" x1="875" y1="224" x2="802" y2="268" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<line id="ar-contract-stock" class="step-el arr-reg" x1="800" y1="280" x2="813" y2="277" marker-end="url(#arrow-reg)"/>
+<line id="ar-request-contract" class="step-el arr-reg" x1="512" y1="352" x2="650" y2="320" marker-end="url(#arrow-reg)"/>
+<line id="ar-payment-contract" class="step-el arr-reg" x1="685" y1="546" x2="685" y2="322" stroke-dasharray="6 4" marker-end="url(#arrow-reg)"/>
 
 <!-- nodes -->
-<g id="n-agency" class="step-el"><rect class="box" x="30" y="44" width="165" height="50" rx="6"/><text class="th" x="112" y="67" text-anchor="middle" fill="#2b2b29">代理店ログイン</text><text class="ts" x="112" y="84" text-anchor="middle" fill="#6b6a64">所属組織→パートナーコード</text></g>
-<g id="a-apply" class="step-el"><rect class="c-main" x="300" y="38" width="240" height="64" rx="8" filter="url(#soft)"/><text class="thm" x="420" y="70" text-anchor="middle" fill="#2E5A0E">申込アプリ</text><text class="ts" x="420" y="88" text-anchor="middle" fill="#3B6D11">入力の起点・ID42</text></g>
-<g id="m-partner" class="step-el"><rect class="c-amber" x="810" y="44" width="165" height="48" rx="6"/><text class="th" x="892" y="66" text-anchor="middle" fill="#633806">代理店マスタ</text><text class="ts" x="892" y="82" text-anchor="middle" fill="#854F0B">パートナーコード・代理店名</text></g>
-<g id="m-tantou" class="step-el"><rect class="c-amber" x="810" y="110" width="165" height="48" rx="6"/><text class="th" x="892" y="132" text-anchor="middle" fill="#633806">案件担当者マスタ</text><text class="ts" x="892" y="148" text-anchor="middle" fill="#854F0B">担当者ID・担当者名</text></g>
-<g id="m-plan" class="step-el"><rect class="c-amber" x="810" y="176" width="165" height="48" rx="6"/><text class="th" x="892" y="198" text-anchor="middle" fill="#633806">プランアプリ</text><text class="ts" x="892" y="214" text-anchor="middle" fill="#854F0B">プラン名・料金・ID11</text></g>
-<g id="a-customer" class="step-el"><rect class="c-blue" x="40" y="150" width="180" height="50" rx="6"/><text class="th" x="130" y="173" text-anchor="middle" fill="#0C447C">顧客アプリ</text><text class="ts" x="130" y="190" text-anchor="middle" fill="#185FA5">お客様コード・顧客ID</text></g>
-<g id="a-install" class="step-el"><rect class="c-blue" x="40" y="238" width="180" height="50" rx="6"/><text class="th" x="130" y="261" text-anchor="middle" fill="#0C447C">設置先アプリ</text><text class="ts" x="130" y="278" text-anchor="middle" fill="#185FA5">設置先コード</text></g>
-<g id="a-contract" class="step-el"><rect class="c-main" x="560" y="246" width="240" height="70" rx="8" filter="url(#soft)"/><text class="thm" x="680" y="278" text-anchor="middle" fill="#2E5A0E">契約アプリ</text><text class="ts" x="680" y="298" text-anchor="middle" fill="#3B6D11">端末1台＝1契約・ID29</text></g>
-<g id="a-stock" class="step-el"><rect class="c-blue" x="810" y="250" width="165" height="50" rx="6"/><text class="th" x="892" y="273" text-anchor="middle" fill="#0C447C">在庫アプリ</text><text class="ts" x="892" y="290" text-anchor="middle" fill="#185FA5">シリアル・貸出中・ID9</text></g>
-<g id="a-request" class="step-el"><rect class="c-op" x="330" y="332" width="215" height="54" rx="6"/><text class="th" x="437" y="355" text-anchor="middle" fill="#4B2C82">対応依頼申請アプリ</text><text class="ts" x="437" y="372" text-anchor="middle" fill="#6C3FA6">解約・プラン変更申請・ID45</text></g>
-<g id="n-gas" class="step-el"><rect class="c-ext" x="30" y="432" width="165" height="50" rx="6"/><text class="th" x="112" y="455" text-anchor="middle" fill="#2b2b29">GAS（メール送信基盤）</text><text class="ts" x="112" y="472" text-anchor="middle" fill="#5A584F">Google Apps Script</text></g>
-<g id="n-mail" class="step-el"><rect class="box" x="300" y="426" width="200" height="54" rx="6"/><text class="th" x="400" y="449" text-anchor="middle" fill="#2b2b29">お客様（申込確認メール）</text><text class="ts" x="400" y="466" text-anchor="middle" fill="#6b6a64">決済登録URLを受信</text></g>
-<g id="n-payweb" class="step-el"><rect class="c-ext" x="300" y="560" width="200" height="54" rx="6"/><text class="th" x="400" y="583" text-anchor="middle" fill="#2b2b29">決済登録ページ（GMO）</text><text class="ts" x="400" y="600" text-anchor="middle" fill="#5A584F">お客様が決済情報を登録</text></g>
-<g id="a-payment" class="step-el"><rect class="c-blue" x="580" y="548" width="220" height="62" rx="6"/><text class="th" x="690" y="575" text-anchor="middle" fill="#0C447C">決済アプリ</text><text class="ts" x="690" y="593" text-anchor="middle" fill="#185FA5">会員ID＝お客様コード・ID20</text></g>
-<g id="m-bank" class="step-el"><rect class="c-amber" x="810" y="556" width="165" height="48" rx="6"/><text class="th" x="892" y="578" text-anchor="middle" fill="#633806">金融機関マスタ</text><text class="ts" x="892" y="594" text-anchor="middle" fill="#854F0B">金融機関コード・名称</text></g>
+<g id="n-agency" class="step-el"><rect class="box" x="40" y="44" width="175" height="50" rx="6"/><text class="th" x="127" y="67" text-anchor="middle" fill="#2b2b29">代理店ログイン</text><text class="ts" x="127" y="84" text-anchor="middle" fill="#6b6a64">所属組織→パートナーコード</text></g>
+<g id="a-apply" class="step-el"><rect class="c-main" x="280" y="40" width="240" height="64" rx="8" filter="url(#soft)"/><text class="thm" x="400" y="72" text-anchor="middle" fill="#2E5A0E">申込アプリ</text><text class="ts" x="400" y="90" text-anchor="middle" fill="#3B6D11">入力の起点・ID42</text></g>
+<g id="m-partner" class="step-el"><rect class="c-amber" x="815" y="44" width="165" height="48" rx="6"/><text class="th" x="897" y="66" text-anchor="middle" fill="#633806">代理店マスタ</text><text class="ts" x="897" y="82" text-anchor="middle" fill="#854F0B">パートナーコード・代理店名</text></g>
+<g id="m-tantou" class="step-el"><rect class="c-amber" x="815" y="110" width="165" height="48" rx="6"/><text class="th" x="897" y="132" text-anchor="middle" fill="#633806">案件担当者マスタ</text><text class="ts" x="897" y="148" text-anchor="middle" fill="#854F0B">担当者ID・担当者名</text></g>
+<g id="m-plan" class="step-el"><rect class="c-amber" x="815" y="176" width="165" height="48" rx="6"/><text class="th" x="897" y="198" text-anchor="middle" fill="#633806">プランアプリ</text><text class="ts" x="897" y="214" text-anchor="middle" fill="#854F0B">プラン名・料金・ID11</text></g>
+<g id="a-customer" class="step-el"><rect class="c-blue" x="40" y="150" width="175" height="50" rx="6"/><text class="th" x="127" y="173" text-anchor="middle" fill="#0C447C">顧客アプリ</text><text class="ts" x="127" y="190" text-anchor="middle" fill="#185FA5">お客様コード・顧客ID</text></g>
+<g id="a-install" class="step-el"><rect class="c-blue" x="40" y="228" width="175" height="50" rx="6"/><text class="th" x="127" y="251" text-anchor="middle" fill="#0C447C">設置先アプリ</text><text class="ts" x="127" y="268" text-anchor="middle" fill="#185FA5">設置先コード</text></g>
+<g id="a-contract" class="step-el"><rect class="c-main" x="560" y="250" width="240" height="70" rx="8" filter="url(#soft)"/><text class="thm" x="680" y="282" text-anchor="middle" fill="#2E5A0E">契約アプリ</text><text class="ts" x="680" y="302" text-anchor="middle" fill="#3B6D11">端末1台＝1契約・ID29</text></g>
+<g id="a-stock" class="step-el"><rect class="c-blue" x="815" y="250" width="165" height="50" rx="6"/><text class="th" x="897" y="273" text-anchor="middle" fill="#0C447C">在庫アプリ</text><text class="ts" x="897" y="290" text-anchor="middle" fill="#185FA5">シリアル・貸出中・ID9</text></g>
+<g id="a-request" class="step-el"><rect class="c-op" x="290" y="336" width="220" height="54" rx="6"/><text class="th" x="400" y="359" text-anchor="middle" fill="#4B2C82">対応依頼申請アプリ</text><text class="ts" x="400" y="376" text-anchor="middle" fill="#6C3FA6">解約・プラン変更申請・ID45</text></g>
+<g id="n-gas" class="step-el"><rect class="c-ext" x="40" y="452" width="175" height="50" rx="6"/><text class="th" x="127" y="475" text-anchor="middle" fill="#2b2b29">GAS（メール送信基盤）</text><text class="ts" x="127" y="492" text-anchor="middle" fill="#5A584F">Google Apps Script</text></g>
+<g id="n-mail" class="step-el"><rect class="box" x="290" y="440" width="220" height="54" rx="6"/><text class="th" x="400" y="463" text-anchor="middle" fill="#2b2b29">お客様（申込確認メール）</text><text class="ts" x="400" y="480" text-anchor="middle" fill="#6b6a64">決済登録URLを受信</text></g>
+<g id="n-payweb" class="step-el"><rect class="c-ext" x="290" y="548" width="220" height="54" rx="6"/><text class="th" x="400" y="571" text-anchor="middle" fill="#2b2b29">決済登録ページ（GMO）</text><text class="ts" x="400" y="588" text-anchor="middle" fill="#5A584F">お客様が決済情報を登録</text></g>
+<g id="a-payment" class="step-el"><rect class="c-blue" x="560" y="548" width="220" height="62" rx="6"/><text class="th" x="670" y="575" text-anchor="middle" fill="#0C447C">決済アプリ</text><text class="ts" x="670" y="593" text-anchor="middle" fill="#185FA5">会員ID＝お客様コード・ID20</text></g>
+<g id="m-bank" class="step-el"><rect class="c-amber" x="815" y="556" width="165" height="48" rx="6"/><text class="th" x="897" y="578" text-anchor="middle" fill="#633806">金融機関マスタ</text><text class="ts" x="897" y="594" text-anchor="middle" fill="#854F0B">金融機関コード・名称</text></g>
 </svg>
 <div class="nav">
   <button onclick="go(-1)" id="prev" aria-label="前のステップ">&#8592;</button>
@@ -140,27 +143,25 @@ const SC=[
   c:[{app:'設置先アプリ',tag:'new',rows:[{k:'設置先コード',v:'発番',f:'num'},{k:'設置先名 / 設置先名_カナ',v:'入力',f:'in'},{k:'担当者名_設置先 / TEL / メール',v:'入力',f:'in'},{k:'顧客住所と同一 / 顧客担当者と同一',v:'フラグ',f:'in'}]}]},
  {ph:'【獲得】受注入力',a:['a-apply'],t:'⑤ 設置先テーブルに申込内容を入力（プラン・端末・オプション）',d:'申込アプリの「設置先情報・申込内容」テーブルに、納品区分・SSID/PASS・導入機種・導入台数・プラン・オプションの有無を入力する。行番号は保存時に自動連番。',
   c:[{app:'申込アプリ／設置先情報・申込内容（テーブル）',tag:'upd',note:'1行＝1設置先',rows:[{k:'行番号',v:'保存時に自動連番',f:'num'},{k:'納品区分 / 納品希望日',v:'入力',f:'in'},{k:'SSID_1・PASS_1・SSID_2・PASS_2',v:'入力',f:'in'},{k:'導入機種名 / 導入台数 / メッシュ設定',v:'入力',f:'in'},{k:'プラン名',v:'入力',f:'in'},{k:'オプションの有無',v:'有 / 無',f:'in'}]},{app:'申込アプリ（集計）',rows:[{k:'導入台数_合計 / ステッカー枚数_合計',v:'自動集計',f:'num'}]}]},
- {ph:'【獲得】受注入力',a:['a-apply'],t:'⑥ 後確OKになったらステータスを固定保存',d:'申込ステータスが「後確OK」になると「申込ステータス（後確OK）」に焼き付けて固定。後確OK日も記録する。',
-  c:[{app:'申込アプリ',tag:'upd',rows:[{k:'申込ステータス',v:'後確OK',f:'chg'},{k:'申込ステータス（後確OK）',v:'固定',f:'reg'},{k:'後確OK日',v:'記録',f:'in'}]}]},
- {ph:'【獲得】メール送信',a:['a-apply','n-gas','n-mail','ar-apply-gas','ar-gas-mail'],t:'⑦（任意）テストメールで受取確認',d:'「テストメール送信」ボタンでGAS経由の受取確認メールを送る。成功で「受信テストメール」が送信済みになる。',
+ {ph:'【獲得】メール送信',a:['a-apply','n-gas','n-mail','ar-apply-gas','ar-gas-mail'],t:'⑥（任意）テストメールで受取確認',d:'「テストメール送信」ボタンでGAS経由の受取確認メールを送る。成功で「受信テストメール」が送信済みになる。',
   c:[{app:'申込アプリ → GAS',note:'種別 test',rows:[{k:'担当者_メールアドレス_顧客',v:'宛先',f:'ext'}]},{app:'申込アプリ',tag:'upd',rows:[{k:'受信テストメール',v:'送信済み',f:'chg'}]}]},
- {ph:'【獲得】メール送信',a:['a-apply','n-gas','n-mail','ar-apply-gas','ar-gas-mail'],t:'⑧「申込確認メール送信」→ 本番メール（決済URL入り）',d:'GAS経由で本番メールを送信。決済登録URL（お客様コード＆申込コード付き）を差し込み、BCCで bb-connection にも送る。成功後「申込確認メール＝送信済み」「送信日時」を記録。',
-  c:[{app:'申込アプリ → GAS',note:'種別 apply',rows:[{k:'担当者_メールアドレス_顧客',v:'宛先',f:'ext'},{k:'BCC',v:'bizwifi@bb-connection.com',f:'ext'}]},{app:'お客様（申込確認メール）',tag:'new',rows:[{k:'決済URL',v:'?id=お客様コード&appli=申込コード',f:'in'}]},{app:'申込アプリ',tag:'upd',rows:[{k:'申込確認メール / 送信日時',v:'送信済み',f:'chg'}]}]},
- {ph:'【獲得】契約生成',a:['a-apply','a-contract','ar-apply-contract'],t:'⑨ メール送信成功 → 契約アプリへ自動コピー（端末1台＝1契約）',d:'申込確認メールの送信成功をトリガーに、契約アプリ(ID29)へコピー。設置先の行×導入台数の数だけ契約レコードを生成し、「オプション有」の行はオプション情報も複製する。同じ申込コードの契約があれば削除して作り直す。',
+ {ph:'【獲得】メール送信',a:['a-apply','n-gas','n-mail','ar-apply-gas','ar-gas-mail'],t:'⑦「申込確認メール送信」→ 本番メール（決済URL入り）',d:'GAS経由で本番メールを送信。決済登録URL（お客様コード＆申込コード付き）を差し込み、BCCで bb-connection にも送る。お客様への申込確認メールの送付が完了すると、申込ステータスが「前確OK」となる。成功後「申込確認メール＝送信済み」「送信日時」を記録。',
+  c:[{app:'申込アプリ → GAS',note:'種別 apply',rows:[{k:'担当者_メールアドレス_顧客',v:'宛先',f:'ext'},{k:'BCC',v:'bizwifi@bb-connection.com',f:'ext'}]},{app:'お客様（申込確認メール）',tag:'new',rows:[{k:'決済URL',v:'?id=お客様コード&appli=申込コード',f:'in'}]},{app:'申込アプリ',tag:'upd',rows:[{k:'申込ステータス',v:'前確OK',f:'chg'},{k:'申込確認メール / 送信日時',v:'送信済み',f:'chg'}]}]},
+ {ph:'【獲得】契約生成',a:['a-apply','a-contract','ar-apply-contract'],t:'⑧ メール送信成功 → 契約アプリへ自動コピー（端末1台＝1契約）',d:'申込確認メールの送信成功をトリガーに、契約アプリ(ID29)へコピー。設置先の行×導入台数の数だけ契約レコードを生成し、「オプション有」の行はオプション情報も複製する。同じ申込コードの契約があれば削除して作り直す。',
   c:[{app:'契約アプリ',tag:'new',note:'台数分を一括生成',rows:[{k:'申込コード / お客様コード / 設置先コード',v:'コピー',f:'reg'},{k:'パートナーコード / 担当者ID',v:'コピー',f:'reg'},{k:'SSID・PASS / 導入機種名 / 納品区分',v:'コピー',f:'reg'},{k:'プラン名',v:'コピー',f:'reg'},{k:'オプションサービス内容 / 数量',v:'有の行のみ',f:'reg'}]}]},
- {ph:'【獲得】契約生成',a:['a-contract','m-partner','m-tantou','m-plan','ar-partner-contract','ar-tantou-contract','ar-plan-contract'],t:'⑩ 契約コード採番＋プラン料金の取得（プランアプリLU）',d:'契約コードが空のレコードに contract_（レコードID）を採番。保存時、プラン名をキーにプランアプリ(ID11)を検索し、月額料金・契約期間・解約金・端末返却違約金を契約側の各_プラン項目へ取り込む。代理店名・担当者名も各マスタから参照する。',
+ {ph:'【獲得】契約生成',a:['a-contract','m-partner','m-tantou','m-plan','ar-partner-contract','ar-tantou-contract','ar-plan-contract'],t:'⑨ 契約コード採番＋プラン料金の取得（プランアプリLU）',d:'契約コードが空のレコードに contract_（レコードID）を採番。保存時、プラン名をキーにプランアプリ(ID11)を検索し、月額料金・契約期間・解約金・端末返却違約金を契約側の各_プラン項目へ取り込む。代理店名・担当者名も各マスタから参照する。',
   c:[{app:'プランアプリ（ID11）',note:'プラン_プラン名で検索',rows:[{k:'月額料金 / 契約期間 / 解約金 / 端末返却違約金',v:'元データ'}]},{app:'契約アプリ',tag:'upd',rows:[{k:'契約コード',v:'contract_10231',f:'num'},{k:'月額料金_プラン / 契約期間_プラン',v:'プランLU',f:'lu'},{k:'解約金_プラン / 端末返却金_プラン',v:'プランLU',f:'lu'},{k:'代理店名 / アポ・営業担当者名',v:'各マスタLU',f:'lu'}]}]},
- {ph:'【獲得】決済登録',a:['n-mail','n-payweb','a-payment','m-bank','ar-mail-payweb','ar-payweb-payment','ar-bank-payment'],t:'⑪ お客様が決済登録 → 決済アプリ（GMO）',d:'お客様がメール内URLから決済情報を登録すると決済アプリ(ID20)に反映。お客様コードと同値の「会員ID」でGMO連携。口座振替は金融機関マスタから金融機関名・支店名を参照する。',
+ {ph:'【獲得】決済登録',a:['n-mail','n-payweb','a-payment','m-bank','ar-mail-payweb','ar-payweb-payment','ar-bank-payment'],t:'⑩ お客様が決済登録 → 決済アプリ（GMO）',d:'お客様がメール内URLから決済情報を登録すると決済アプリ(ID20)に反映。お客様コードと同値の「会員ID」でGMO連携。口座振替は金融機関マスタから金融機関名・支店名を参照する。',
   c:[{app:'決済登録ページ（GMO）',rows:[{k:'お客様コード / 申込コード',v:'URL由来',f:'in'},{k:'希望決済方法',v:'クレカ / 口座振替',f:'in'}]},{app:'決済アプリ（ID20）',tag:'new',rows:[{k:'会員ID',v:'＝お客様コード',f:'reg'},{k:'決済コード',v:'発番',f:'num'},{k:'金融機関名 / 支店名',v:'金融機関マスタLU',f:'lu'},{k:'クレカ登録ステータス',v:'GMO連携',f:'chg'}]}]},
- {ph:'【運用】保存時の自動処理',a:['a-contract'],t:'⑫ 契約ステータス・契約開始日・請求開始日の自動判定',d:'契約アプリの保存時（後確OKのときのみ）、発注日・解約日・契約開始日から契約ステータスを判定。納品待ちなら納品日を納品希望日で補完→契約開始日＝納品日→請求開始日＝翌月1日、と日付を連鎖設定。オプションの請求開始日（保守は同月・ITサポートは翌月）も埋める。api_update_flgがONの更新はスキップ。',
-  c:[{app:'契約アプリ',tag:'auto',note:'保存前イベント',rows:[{k:'契約ステータス',v:'発注前 / 納品待ち / 契約中 / 解約 …',f:'chg'},{k:'納品日',v:'←納品希望日で補完',f:'chg'},{k:'契約開始日',v:'←納品日',f:'chg'},{k:'請求開始日',v:'契約開始日の翌月1日',f:'num'},{k:'オプション_請求開始日',v:'保守=同月/IT=翌月',f:'chg'}]}]},
- {ph:'【運用】決済コード連携',a:['a-payment','a-contract','a-apply','ar-payment-contract'],t:'⑬ 決済コード連携（決済アプリ⇄契約＋申込の後確OK更新）',d:'一覧ボタンの進捗モーダル付きバッチ。決済アプリ(ID20)の申込コード_コピー→決済コードの対応で、契約の決済コードを補完。あわせて申込アプリ(ID42)を後確OK＋後確OK日=今日に更新し、ルックアップ再取得（lookup:true）で最新化する。',
-  c:[{app:'決済アプリ（ID20）',note:'申込コード_コピーで突合',rows:[{k:'決済コード',v:'元データ'}]},{app:'契約アプリ',tag:'btn',rows:[{k:'申込コード_検索用',v:'補完',f:'reg'},{k:'決済コード',v:'決済アプリから連携',f:'reg'},{k:'ルックアップ',v:'再取得(lookup:true)',f:'chg'}]},{app:'申込アプリ（ID42）',tag:'upd',rows:[{k:'申込ステータス / 後確OK日',v:'後確OK・今日',f:'chg'}]}]},
- {ph:'【運用】在庫連携',a:['a-contract','a-stock','ar-contract-stock'],t:'⑭ 発注 → 在庫アプリへ反映（貸出中）',d:'契約の保存成功後、シリアルコードと発注番号が揃っていれば、在庫アプリ(ID9)でシリアル一致レコードを探し、在庫_発注番号を書き込み、在庫ステータスを「貸出中」に更新する（「一時貸出不可」の端末は変えない）。',
+ {ph:'【運用】保存時の自動処理',a:['a-contract'],t:'⑪ 契約を保存すると、ステータスと日付を自動セット',d:['契約アプリを保存したとき（申込が後確OKのときだけ）、システムが状態と日付を自動で決める。','① 発注日・解約日・契約開始日・解約理由から「契約ステータス」を6区分で自動判定（下表の判定条件のとおり）。','② ステータスが「納品待ち」なら、次の順で日付が芋づる式に決まる：納品日（空なら納品希望日で補完）→ 契約開始日＝納品日 → 請求開始日＝その翌月1日。','③ オプションの請求開始日も自動で入る（保守＝契約と同月／ITサポート＝翌月）。','※他システムからの自動更新（api_update_flg＝ON）のときは、この処理は動かさない。'],
+  c:[{app:'① 契約ステータスの判定条件',tag:'auto',note:'〇=あり / ×=なし（上から順に判定）',rows:[{k:'発注前',v:'発注日× ／ 解約日×'},{k:'納品待ち',v:'発注日〇・解約日×・契約開始日〇・今日＜契約開始日'},{k:'契約中',v:'発注日〇・解約日×・契約開始日〇・今日≧契約開始日'},{k:'解約（納品前）',v:'解約日〇・発注日×'},{k:'解約',v:'解約日〇・発注日〇（解約理由＝強制解約 以外）'},{k:'解約（強制解約）',v:'解約日〇・発注日〇・解約理由＝強制解約'}]},{app:'契約アプリ（納品待ちのとき）',tag:'auto',note:'② 日付を順に自動セット',rows:[{k:'納品日',v:'空なら納品希望日で補完',f:'chg'},{k:'契約開始日',v:'＝ 納品日',f:'chg'},{k:'請求開始日',v:'＝ 契約開始日の翌月1日',f:'num'}]},{app:'契約アプリ',tag:'auto',note:'③ オプションぶん',rows:[{k:'オプション_請求開始日',v:'保守＝同月 / ITサポート＝翌月',f:'chg'}]}]},
+ {ph:'【運用】決済コード連携',a:['a-payment','a-contract','a-apply','ar-payment-contract'],t:'⑫「決済コード連携」ボタンで決済コードを取り込み＋後確OK化',d:['契約一覧の「決済コード連携」ボタンを押すと、進捗バーを出しながら一括で処理する。','① 決済アプリ(ID20)の「申込コード_コピー」と契約の申込コードを突き合わせ、対応する決済コードを契約に書き込む（空欄を埋める）。','② 同じ申込の申込アプリ(ID42)を「後確OK」にし、後確OK日＝今日を記録。','③ 関連するルックアップ項目を取り直して（lookup:true）最新値にそろえる。'],
+  c:[{app:'決済アプリ（ID20）',note:'① 申込コードで突合する元データ',rows:[{k:'決済コード',v:'取り込み元'}]},{app:'契約アプリ',tag:'btn',note:'① 決済コードを書き込み',rows:[{k:'申込コード_検索用',v:'突合キーを補完',f:'reg'},{k:'決済コード',v:'決済アプリから連携',f:'reg'},{k:'ルックアップ',v:'再取得して最新化',f:'chg'}]},{app:'申込アプリ（ID42）',tag:'upd',note:'② あわせて後確OK化',rows:[{k:'申込ステータス',v:'後確OK',f:'chg'},{k:'後確OK日',v:'今日',f:'chg'}]}]},
+ {ph:'【運用】在庫連携',a:['a-contract','a-stock','ar-contract-stock'],t:'⑬ 発注 → 在庫アプリへ反映（貸出中）',d:'契約の保存成功後、シリアルコードと発注番号が揃っていれば、在庫アプリ(ID9)でシリアル一致レコードを探し、在庫_発注番号を書き込み、在庫ステータスを「貸出中」に更新する（「一時貸出不可」の端末は変えない）。',
   c:[{app:'契約アプリ',note:'保存成功イベント',rows:[{k:'シリアルコード / 発注番号',v:'キー'}]},{app:'在庫アプリ（ID9）',tag:'upd',rows:[{k:'在庫_発注番号',v:'←発注番号',f:'reg'},{k:'在庫ステータス',v:'貸出中',f:'chg'}]}]},
- {ph:'【運用】申請反映',a:['a-request','a-contract','m-plan','ar-request-contract','ar-plan-contract'],t:'⑮ 対応依頼申請 → 契約へ反映（解約・プラン変更）',d:'対応依頼申請アプリ(ID45)で「承諾済み・反映実行日が空」の申請を、契約コードで契約に紐づけて一括反映。解約日・請求終了日・返却期限日・各承諾有無・解約理由・プラン名（変更後→プランアプリから料金再取得）・オプション解約日を書き込み、申請側に反映実行日をセットする。オプションサービス内容の集計更新も一覧ボタンで行える。',
+ {ph:'【運用】申請反映',a:['a-request','a-contract','m-plan','ar-request-contract','ar-plan-contract'],t:'⑭ 対応依頼申請 → 契約へ反映（解約・プラン変更）',d:'対応依頼申請アプリ(ID45)で「承諾済み・反映実行日が空」の申請を、契約コードで契約に紐づけて一括反映。解約日・請求終了日・返却期限日・各承諾有無・解約理由・プラン名（変更後→プランアプリから料金再取得）・オプション解約日を書き込み、申請側に反映実行日をセットする。オプションサービス内容の集計更新も一覧ボタンで行える。',
   c:[{app:'対応依頼申請アプリ（ID45）',tag:'btn',note:'承諾済み＆未反映を一括',rows:[{k:'契約コード_契約',v:'紐づけキー'},{k:'本体解約日 / 請求終了日 / 返却期限日',v:'申請値'},{k:'プラン名_変更後',v:'申請値'}]},{app:'契約アプリ',tag:'upd',rows:[{k:'解約日 / 請求終了日 / 返却期限日',v:'反映',f:'reg'},{k:'月額料金請求_承諾有無 / 解約金請求_承諾有無',v:'反映',f:'reg'},{k:'プラン名',v:'←変更後→料金再取得',f:'chg'},{k:'オプション_解約日 / オプションサービス内容',v:'反映・集計',f:'chg'}]}]},
- {ph:'【運用】保存時の自動処理',a:['a-contract'],t:'⑯ 解約時の日付を自動計算（返却期限・請求終了・違約金）',d:'契約が解約系ステータス＋解約日ありで保存されると、月額料金請求_承諾有無に応じて返却期限日（了承／強制解約OK＝解約日、不承＝翌月末日）を計算。請求終了日＝解約日、端末返却違約金_発生日＝返却期限日基準の翌月末日を自動セットする。',
+ {ph:'【運用】保存時の自動処理',a:['a-contract'],t:'⑮ 解約時の日付を自動計算（返却期限・請求終了・違約金）',d:'契約が解約系ステータス＋解約日ありで保存されると、月額料金請求_承諾有無に応じて返却期限日（了承／強制解約OK＝解約日、不承＝翌月末日）を計算。請求終了日＝解約日、端末返却違約金_発生日＝返却期限日基準の翌月末日を自動セットする。',
   c:[{app:'契約アプリ',tag:'auto',note:'保存前イベント',rows:[{k:'返却期限日',v:'了承=解約日 / 不承=翌月末日',f:'num'},{k:'請求終了日',v:'＝解約日',f:'num'},{k:'端末返却違約金_発生日',v:'翌月末日',f:'num'}]}]}
 ];
 
@@ -172,7 +173,9 @@ function render(){
   ALL.forEach(id=>{const el=document.getElementById(id);if(el)el.classList.toggle('on',step.a.includes(id));});
   document.getElementById('phase').textContent=step.ph;
   document.getElementById('cap-t').textContent=step.t;
-  document.getElementById('cap-d').textContent=step.d;
+  const capd=document.getElementById('cap-d');
+  if(Array.isArray(step.d)){capd.innerHTML='<ul class="cap-ul">'+step.d.map(x=>'<li>'+x+'</li>').join('')+'</ul>';}
+  else{capd.textContent=step.d;}
   document.getElementById('counter').textContent=(idx+1)+' / '+SC.length;
   document.getElementById('prev').disabled=idx===0;
   document.getElementById('next').disabled=idx===SC.length-1;
